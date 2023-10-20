@@ -421,6 +421,48 @@ body {
 }
 
 @media (max-width: 1366px) {
+  .headline {
+    display: flex;
+    text-align: left;
+    width: 1300px;
+    padding: 60px 60px 60px 60px;
+  }
+
+  .headline .text h1 {
+    color: #a065ff;
+    font-size: 49px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 40px;
+  }
+  .headline .text {
+    width: 56%;
+  }
+  .headline .text h2 {
+    width: 70%;
+    color: white;
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding-top: 60px;
+  }
+
+  .headline .images {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .headline .images .highlight-top-left {
+    margin-left: 48px;
+    margin-bottom: 20px;
+  }
+
+  .mapheadline {
+    position: absolute;
+    bottom: -20px;
+  }
   .experiences .text {
     padding-top: 10px;
     padding-bottom: 30px;
