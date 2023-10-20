@@ -286,10 +286,16 @@ body {
   text-align: justify;
 }
 .who-am-i .text {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 50%;
+  padding-left: 215px;
 }
 .who-am-i .image {
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 .who-am-i {
   display: flex;
@@ -411,40 +417,47 @@ body {
   }
 }
 
+@media (max-width: 1366px) {
+  .experiences .text {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
 @media (max-width: 767px) {
   .headline {
-    width: 100%; /* Ajusta a largura para ocupar a tela inteira */
-    flex-direction: column; /* Altera para uma disposição em coluna */
-    align-items: center; /* Centraliza os elementos */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .headline .text {
-    width: 100%; /* Ajusta a largura para ocupar a tela inteira */
-    text-align: center; /* Centraliza o texto horizontalmente */
+    width: 100%;
+    text-align: center;
   }
 
   .headline .text h1 {
-    font-size: 36px; /* Reduz o tamanho da fonte */
-    margin-top: 20px; /* Reduz a margem superior */
+    font-size: 36px;
+    margin-top: 20px;
   }
 
   .headline .text h2 {
-    font-size: 28px; /* Reduz o tamanho da fonte */
-    padding-top: 40px; /* Reduz o espaçamento superior */
+    font-size: 28px;
+    padding-top: 40px;
   }
 
   .headline .images {
-    width: 100%; /* Ajusta a largura para ocupar a tela inteira */
+    width: 100%;
   }
 
   .headline .images .highlight-top-left,
   .headline .images .highlight-bottom-left {
-    margin: 20px; /* Reduz a margem das imagens */
+    margin: 20px;
   }
 
   .mapheadline {
-    position: static; /* Remove a posição absoluta */
-    margin-top: 20px; /* Adiciona margem superior para separação */
+    position: static;
+    margin-top: 20px;
   }
 
   .community {
@@ -453,40 +466,40 @@ body {
   }
 
   .community .text {
-    padding: 10px; /* Reduz o preenchimento do texto */
-    margin-left: 0; /* Remove a margem à esquerda */
-    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 10px;
+    margin-left: 0;
+    text-align: center;
   }
 
   .community .discord {
-    display: block; /* Converte para bloco para empilhar verticalmente */
+    display: block;
   }
 
   .community .text h2 {
-    font-size: 28px; /* Reduz o tamanho da fonte */
+    font-size: 28px;
   }
 
   .community .text em {
-    font-size: 14px; /* Reduz o tamanho da fonte */
+    font-size: 14px;
   }
 
   .community .text .weight-200,
   .community .text p strong {
-    font-size: 18px; /* Reduz o tamanho da fonte */
+    font-size: 18px;
   }
 
   .experiences .text h1 {
-    font-size: 32px; /* Reduz o tamanho da fonte */
-    line-height: 48px; /* Reduz a altura da linha */
+    font-size: 32px;
+    line-height: 48px;
   }
 
   .places {
-    width: 100%; /* Ajusta a largura para ocupar a tela inteira */
-    grid-template-columns: repeat(2, 1fr); /* Reduz para 2 colunas */
-    gap: 5px; /* Reduz o espaçamento entre as imagens */
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
   }
   .places img {
-    max-width: 80%; /* Reduz o tamanho máximo das imagens */
+    max-width: 80%;
   }
 
   .what-is {
@@ -496,17 +509,17 @@ body {
   }
 
   .what-is .what-is-container {
-    width: 80%; /* Reduz a largura do contêiner */
+    width: 80%;
   }
 
   .what-is h2 {
-    font-size: 25px; /* Reduz o tamanho da fonte */
-    margin: 10px; /* Reduz a margem */
+    font-size: 25px;
+    margin: 10px;
   }
 
   .what-is p {
-    font-size: 15px; /* Reduz o tamanho da fonte */
-    margin: 10px; /* Reduz a margem */
+    font-size: 15px;
+    margin: 10px;
   }
 
   .nomadz-button {
@@ -514,6 +527,24 @@ body {
     height: 60px;
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  .who-am-i .text {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 50%;
+    padding-left: 0px;
+  }
+  .who-am-i .image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .who-am-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .subscribe-now {
@@ -589,11 +620,14 @@ body {
   }
 
   .experiences {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin-top: 20px;
   }
 
   .experiences .text h1 {
-    font-size: 30px;
+    font-size: 22px;
     line-height: 45px;
   }
 
@@ -626,8 +660,71 @@ body {
     font-size: 18px;
     margin: 10px;
   }
+
+  .benefits {
+    padding-top: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .benefits h2 {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37db5a;
+  }
+
+  .benefits ul {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .benefit {
+    width: calc(33.33% - 10px);
+    margin-right: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #37db5a;
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+
+  .who-am-i {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .who-am-i .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .who-am-i .image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .who-am-i .text h2 {
+    color: #a065ff;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
   .who-am-i .text p {
-    width: 90%; /* Aumenta a largura do texto para ocupar mais espaço na tela */
-    text-align: right; /* Alinha o texto à direita */
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 400;
   }
 }
