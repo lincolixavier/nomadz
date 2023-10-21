@@ -198,15 +198,13 @@ body {
   overflow: hidden;
 }
 .community .text {
-  width: 125%;
+  width: 100%;
   text-align: left;
   padding: 20px;
   padding-left: 200px;
 }
 .community .discord {
-  height: 710px;
-  width: 1073px;
-  transform: translateX(310px);
+  transform: translateX(500px);
 }
 .community .text .weight-200 {
   width: 100%;
@@ -216,9 +214,7 @@ body {
   font-weight: 200;
 }
 .community .discord img {
-  width: fit-content;
-  height: fit-content;
-  max-width: 100%;
+  max-width: none;
   display: block;
 }
 .community .text h2 {
@@ -512,6 +508,17 @@ body {
   }
   .how-to-do img {
     padding-top: 100px;
+  }
+  .community {
+    display: flex;
+    width: 144%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .community .discord {
+    transform: translateX(140px);
   }
 }
 
