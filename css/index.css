@@ -424,377 +424,6 @@ body {
   font-family: Poppins;
   font-weight: 400;
 }
-
-@media (max-width: 1400px) {
-  .what-is {
-    height: 615px;
-  }
-
-  .what-is .what-is-container {
-    width: 80%;
-  }
-  .headline {
-    display: flex;
-    text-align: left;
-    width: 1300px;
-    padding: 60px 60px 60px 60px;
-  }
-
-  .headline .text h1 {
-    color: #a065ff;
-    font-size: 49px;
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-    margin-top: 40px;
-  }
-  .headline .text {
-    width: 56%;
-  }
-  .headline .text h2 {
-    width: 70%;
-    color: white;
-    font-size: 35px;
-    font-family: Poppins;
-    font-weight: 500;
-    word-wrap: break-word;
-    padding-top: 60px;
-  }
-
-  .headline .images {
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .headline .images .highlight-top-left {
-    margin-left: 48px;
-    margin-bottom: 20px;
-  }
-
-  .mapheadline {
-    position: absolute;
-    bottom: -20px;
-  }
-  .experiences .text {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-  }
-
-  .how-to-do {
-    width: 47%;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto;
-    align-items: center;
-    text-align: center;
-  }
-
-  .how-to-do h2 {
-    color: #a065ff;
-    font-size: 49px;
-    font-family: Poppins;
-    font-weight: 700;
-  }
-  .how-to-do p {
-    font-size: 20px;
-    font-family: Poppins;
-    font-weight: 500;
-    word-wrap: break-word;
-  }
-  .how-to-do img {
-    padding-top: 100px;
-  }
-
-  .community {
-    display: flex;
-    width: 130%;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .community .discord {
-    transform: translateX(85px);
-  }
-  .community .text {
-    width: 100%;
-    text-align: left;
-    padding: 20px;
-    padding-left: 240px;
-  }
-}
-
-@media (max-width: 1366px) {
-  .headline {
-    display: flex;
-    text-align: left;
-    width: 1300px;
-    padding: 60px 60px 60px 60px;
-  }
-
-  .headline .text h1 {
-    color: #a065ff;
-    font-size: 49px;
-    font-family: Poppins;
-    font-weight: 700;
-    word-wrap: break-word;
-    margin-top: 40px;
-  }
-  .headline .text {
-    width: 56%;
-  }
-  .headline .text h2 {
-    width: 70%;
-    color: white;
-    font-size: 35px;
-    font-family: Poppins;
-    font-weight: 500;
-    word-wrap: break-word;
-    padding-top: 60px;
-  }
-
-  .headline .images {
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .headline .images .highlight-top-left {
-    margin-left: 48px;
-    margin-bottom: 20px;
-  }
-
-  .mapheadline {
-    position: absolute;
-    bottom: -20px;
-  }
-  .experiences .text {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-  }
-
-  .how-to-do {
-    width: 47%;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto;
-    align-items: center;
-    text-align: center;
-  }
-
-  .how-to-do h2 {
-    color: #a065ff;
-    font-size: 49px;
-    font-family: Poppins;
-    font-weight: 700;
-  }
-  .how-to-do p {
-    font-size: 20px;
-    font-family: Poppins;
-    font-weight: 500;
-    word-wrap: break-word;
-  }
-  .how-to-do img {
-    padding-top: 100px;
-  }
-  .community {
-    display: flex;
-    width: 144%;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .community .discord {
-    transform: translateX(140px);
-  }
-}
-
-@media (max-width: 767px) {
-  .headline {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .headline .text {
-    width: 100%;
-  }
-
-  .headline .text h1 {
-    font-size: 30px;
-    margin-top: 20px;
-  }
-
-  .headline .text h2 {
-    font-size: 25px;
-    padding-top: 40px;
-  }
-
-  .headline .images {
-    width: 100%;
-  }
-
-  .headline .images .highlight-top-left,
-  .headline .images .highlight-bottom-left {
-    margin: 15px;
-  }
-
-  .mapheadline {
-    display: none;
-  }
-
-  .how-to-do {
-    width: 100%;
-    margin: 20px auto;
-  }
-
-  .how-to-do h2 {
-    font-size: 30px;
-  }
-
-  .how-to-do p {
-    font-size: 18px;
-  }
-
-  .community .text {
-    padding-left: 40px;
-    margin-left: 20px;
-  }
-
-  .community .text h2 {
-    font-size: 25px;
-  }
-
-  .community .text em {
-    font-size: 14px;
-  }
-
-  .community .text .weight-200,
-  .community .text p strong {
-    width: 40%;
-    font-size: 18px;
-  }
-  .community {
-    display: flex;
-    flex-direction: column;
-  }
-  .community .discord {
-    transform: translateX(20px);
-}
-
-  .experiences {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .experiences .text h1 {
-    font-size: 22px;
-    line-height: 45px;
-  }
-
-  .places {
-    width: 100%;
-  }
-
-  .what-is {
-    height: 100%;
-    background-image: none;
-    background: linear-gradient(to right, #af137d, #7419e1);
-  }
-  .nomadz-button {
-    font-size: 20px;
-    height: 60px;
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
-  .what-is .what-is-container {
-    width: 90%;
-  }
-
-  .what-is h2 {
-    margin: 2px;
-    font-size: 28px;
-  }
-
-  .what-is p {
-    font-size: 18px;
-    margin: 10px;
-  }
-
-  .benefits {
-    padding-top: 140px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  .benefits h2 {
-    font-size: 18px;
-    font-family: Poppins;
-    font-weight: 700;
-    color: #37db5a;
-  }
-
-  .benefits ul {
-    column-count: 2;
-    column-gap: 20px;
-  }
-
-  .benefit {
-    width: calc(33.33% - 10px);
-    margin-right: 10px;
-    padding-left: 10px;
-    border-left: 3px solid #37db5a;
-    padding: 10px;
-    margin-bottom: 40px;
-    text-align: justify;
-  }
-
-  .who-am-i {
-    padding-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .who-am-i .text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    padding: 0;
-  }
-
-  .who-am-i .image {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-  }
-
-  .who-am-i .text h2 {
-    color: #a065ff;
-    font-size: 25px;
-    font-family: Poppins;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-
-  .who-am-i .text p {
-    font-size: 15px;
-    font-family: Poppins;
-    font-weight: 400;
-  }
-}
-
 @media (max-width: 360px) {
   .headline {
     width: 100%;
@@ -969,5 +598,395 @@ body {
     font-size: 15px;
     font-family: Poppins;
     font-weight: 400;
+  }
+
+  .subscribe-now {
+    text-align: center;
+    height: auto;
+    margin-top: 100px;
+    background-image: url(../images/subscribe-now.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe-now h2 {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 767px) {
+  .headline {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .headline .text {
+    width: 100%;
+  }
+
+  .headline .text h1 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .headline .text h2 {
+    font-size: 25px;
+    padding-top: 40px;
+  }
+
+  .headline .images {
+    width: 100%;
+  }
+
+  .headline .images .highlight-top-left,
+  .headline .images .highlight-bottom-left {
+    margin: 15px;
+  }
+
+  .mapheadline {
+    display: none;
+  }
+
+  .how-to-do {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .how-to-do h2 {
+    font-size: 30px;
+  }
+
+  .how-to-do p {
+    font-size: 18px;
+  }
+
+  .community .text {
+    padding-left: 40px;
+    margin-left: 20px;
+  }
+
+  .community .text h2 {
+    font-size: 25px;
+  }
+
+  .community .text em {
+    font-size: 14px;
+  }
+
+  .community .text .weight-200,
+  .community .text p strong {
+    width: 40%;
+    font-size: 18px;
+  }
+  .community {
+    display: flex;
+    flex-direction: column;
+  }
+  .community .discord {
+    transform: translateX(20px);
+  }
+
+  .experiences {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .experiences .text h1 {
+    font-size: 22px;
+    line-height: 45px;
+  }
+
+  .places {
+    width: 100%;
+  }
+
+  .what-is {
+    height: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
+  }
+  .nomadz-button {
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .what-is .what-is-container {
+    width: 90%;
+  }
+
+  .what-is h2 {
+    margin: 2px;
+    font-size: 28px;
+  }
+
+  .what-is p {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .benefits {
+    padding-top: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .benefits h2 {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37db5a;
+  }
+
+  .benefits ul {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .benefit {
+    width: calc(33.33% - 10px);
+    margin-right: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #37db5a;
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+
+  .who-am-i {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .who-am-i .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .who-am-i .image {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .who-am-i .text h2 {
+    color: #a065ff;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .who-am-i .text p {
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1366px) {
+  .headline {
+    display: flex;
+    text-align: left;
+    width: 1300px;
+    padding: 60px 60px 60px 60px;
+  }
+
+  .headline .text h1 {
+    color: #a065ff;
+    font-size: 49px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 40px;
+  }
+  .headline .text {
+    width: 56%;
+  }
+  .headline .text h2 {
+    width: 70%;
+    color: white;
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding-top: 60px;
+  }
+
+  .headline .images {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .headline .images .highlight-top-left {
+    margin-left: 48px;
+    margin-bottom: 20px;
+  }
+
+  .mapheadline {
+    position: absolute;
+    bottom: -20px;
+  }
+  .experiences .text {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .how-to-do {
+    width: 47%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .how-to-do h2 {
+    color: #a065ff;
+    font-size: 49px;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+  .how-to-do p {
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  .how-to-do img {
+    padding-top: 100px;
+  }
+  .community {
+    display: flex;
+    width: 144%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .community .discord {
+    transform: translateX(140px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .what-is {
+    height: 615px;
+  }
+
+  .what-is .what-is-container {
+    width: 80%;
+  }
+  .headline {
+    display: flex;
+    text-align: left;
+    width: 1300px;
+    padding: 60px 60px 60px 60px;
+  }
+
+  .headline .text h1 {
+    color: #a065ff;
+    font-size: 49px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 40px;
+  }
+  .headline .text {
+    width: 56%;
+  }
+  .headline .text h2 {
+    width: 70%;
+    color: white;
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding-top: 60px;
+  }
+
+  .headline .images {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .headline .images .highlight-top-left {
+    margin-left: 48px;
+    margin-bottom: 20px;
+  }
+
+  .mapheadline {
+    position: absolute;
+    bottom: -20px;
+  }
+  .experiences .text {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .how-to-do {
+    width: 47%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .how-to-do h2 {
+    color: #a065ff;
+    font-size: 49px;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+  .how-to-do p {
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  .how-to-do img {
+    padding-top: 100px;
+  }
+
+  .community {
+    display: flex;
+    width: 130%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .community .discord {
+    transform: translateX(85px);
+  }
+  .community .text {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    padding-left: 240px;
   }
 }
