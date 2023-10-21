@@ -433,6 +433,97 @@ body {
   .what-is .what-is-container {
     width: 80%;
   }
+  .headline {
+    display: flex;
+    text-align: left;
+    width: 1300px;
+    padding: 60px 60px 60px 60px;
+  }
+
+  .headline .text h1 {
+    color: #a065ff;
+    font-size: 49px;
+    font-family: Poppins;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-top: 40px;
+  }
+  .headline .text {
+    width: 56%;
+  }
+  .headline .text h2 {
+    width: 70%;
+    color: white;
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+    padding-top: 60px;
+  }
+
+  .headline .images {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .headline .images .highlight-top-left {
+    margin-left: 48px;
+    margin-bottom: 20px;
+  }
+
+  .mapheadline {
+    position: absolute;
+    bottom: -20px;
+  }
+  .experiences .text {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .how-to-do {
+    width: 47%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .how-to-do h2 {
+    color: #a065ff;
+    font-size: 49px;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+  .how-to-do p {
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  .how-to-do img {
+    padding-top: 100px;
+  }
+
+  .community {
+    display: flex;
+    width: 130%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .community .discord {
+    transform: translateX(85px);
+  }
+  .community .text {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    padding-left: 240px;
+  }
 }
 
 @media (max-width: 1366px) {
@@ -526,21 +617,19 @@ body {
   .headline {
     width: 100%;
     flex-direction: column;
-    align-items: center;
   }
 
   .headline .text {
     width: 100%;
-    text-align: center;
   }
 
   .headline .text h1 {
-    font-size: 36px;
+    font-size: 30px;
     margin-top: 20px;
   }
 
   .headline .text h2 {
-    font-size: 28px;
+    font-size: 25px;
     padding-top: 40px;
   }
 
@@ -550,31 +639,33 @@ body {
 
   .headline .images .highlight-top-left,
   .headline .images .highlight-bottom-left {
-    margin: 20px;
+    margin: 15px;
   }
 
   .mapheadline {
-    position: static;
-    margin-top: 20px;
+    display: none;
   }
 
-  .community {
-    display: flex;
-    flex-direction: column;
+  .how-to-do {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .how-to-do h2 {
+    font-size: 30px;
+  }
+
+  .how-to-do p {
+    font-size: 18px;
   }
 
   .community .text {
-    padding: 10px;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .community .discord {
-    display: block;
+    padding-left: 40px;
+    margin-left: 20px;
   }
 
   .community .text h2 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   .community .text em {
@@ -583,43 +674,38 @@ body {
 
   .community .text .weight-200,
   .community .text p strong {
+    width: 40%;
     font-size: 18px;
+  }
+  .community {
+    display: flex;
+    flex-direction: column;
+  }
+  .community .discord {
+    transform: translateX(20px);
+}
+
+  .experiences {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .experiences .text h1 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 22px;
+    line-height: 45px;
   }
 
   .places {
     width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-  }
-  .places img {
-    max-width: 80%;
   }
 
   .what-is {
-    height: 400px;
-    background-size: cover;
-    justify-content: start;
+    height: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
   }
-
-  .what-is .what-is-container {
-    width: 80%;
-  }
-
-  .what-is h2 {
-    font-size: 25px;
-    margin: 10px;
-  }
-
-  .what-is p {
-    font-size: 15px;
-    margin: 10px;
-  }
-
   .nomadz-button {
     font-size: 20px;
     height: 60px;
@@ -627,26 +713,85 @@ body {
     margin-bottom: 5px;
   }
 
+  .what-is .what-is-container {
+    width: 90%;
+  }
+
+  .what-is h2 {
+    margin: 2px;
+    font-size: 28px;
+  }
+
+  .what-is p {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .benefits {
+    padding-top: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .benefits h2 {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37db5a;
+  }
+
+  .benefits ul {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .benefit {
+    width: calc(33.33% - 10px);
+    margin-right: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #37db5a;
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+
+  .who-am-i {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .who-am-i .text {
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    width: 50%;
-    padding-left: 0px;
+    text-align: center;
+    width: 100%;
+    padding: 0;
   }
+
   .who-am-i .image {
     display: flex;
     justify-content: center;
     width: 50%;
   }
-  .who-am-i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .who-am-i .text h2 {
+    color: #a065ff;
+    font-size: 25px;
+    font-family: Poppins;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
 
-  .subscribe-now {
-    text-align: center;
+  .who-am-i .text p {
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 400;
   }
 }
 
