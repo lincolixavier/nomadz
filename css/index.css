@@ -128,7 +128,7 @@ body {
 }
 
 .headline .text {
-  width: 60%;
+  width: 55%;
 }
 
 .headline .text h1 {
@@ -138,6 +138,7 @@ body {
   font-weight: 700;
   word-wrap: break-word;
   margin-top: 40px;
+  width: 90%;
 }
 .headline .text h2 {
   color: white;
@@ -245,6 +246,7 @@ body {
 }
 .experiences .text {
   display: flex;
+  text-align: center;
   justify-content: center;
 }
 .experiences .text h1 {
@@ -325,6 +327,7 @@ body {
 }
 
 .benefits ul {
+  padding-left: 220px;
   column-count: 2;
   column-gap: 20px;
 }
@@ -448,10 +451,10 @@ body {
     margin-top: 40px;
   }
   .headline .text {
-    width: 56%;
+    width: 60%;
   }
   .headline .text h2 {
-    width: 70%;
+    width: 75%;
     color: white;
     font-size: 35px;
     font-family: Poppins;
@@ -541,10 +544,10 @@ body {
     margin-top: 40px;
   }
   .headline .text {
-    width: 56%;
+    width: 60%;
   }
   .headline .text h2 {
-    width: 70%;
+    width: 75%;
     color: white;
     font-size: 35px;
     font-family: Poppins;
