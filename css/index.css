@@ -199,7 +199,6 @@ body {
   overflow: hidden;
 }
 .community .text {
-  width: 100%;
   text-align: left;
   padding: 20px;
   padding-left: 200px;
@@ -208,7 +207,7 @@ body {
   transform: translateX(500px);
 }
 .community .text .weight-200 {
-  width: 100%;
+  width: 89%;
   font-size: 18px;
   font-family: Poppins;
   word-wrap: break-word;
@@ -248,6 +247,8 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 .experiences .text h1 {
   font-size: 42px;
@@ -426,6 +427,13 @@ body {
   font-size: 17px;
   font-family: Poppins;
   font-weight: 400;
+}
+@media (min-width: 1401px) and (max-width: 1777px) {
+  .community .text {
+    text-align: left;
+    padding: 0px;
+    padding-left: 0px;
+  }
 }
 @media (max-width: 1400px) {
   .what-is {
@@ -611,6 +619,33 @@ body {
 
   .community .discord {
     transform: translateX(140px);
+  }
+}
+@media (min-width: 768px) and (max-width: 1124px) {
+  .community .text {
+    padding-left: 40px;
+    margin-left: 20px;
+  }
+
+  .community .text h2 {
+    font-size: 25px;
+  }
+
+  .community .text em {
+    font-size: 14px;
+  }
+
+  .community .text .weight-200,
+  .community .text p strong {
+    width: 40%;
+    font-size: 18px;
+  }
+  .community {
+    display: flex;
+    flex-direction: column;
+  }
+  .community .discord {
+    transform: translateX(20px);
   }
 }
 
