@@ -259,27 +259,81 @@ body {
 }
 .places {
   width: 80%;
-  column-count: 3;
-  column-gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 8px;
 }
 .places img {
   max-width: 100%;
-  display: block;
+  height: auto;
+  flex-grow: 1;
 }
-
 .places figure {
   margin: 0;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  margin-bottom: 10px;
   break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.places figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+}
+.brasil {
+  height: 95%;
+  grid-column: span 1;
+  grid-row: span 2;
 }
 
-.places figure img {
-  grid-row: 1 / -1;
-  grid-column: 1;
+.cingapura {
+  grid-column: span 3;
+  grid-row: span 1;
 }
 
+.mexico {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.panama {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.guatemala {
+  height: 115%;
+  grid-column: span 1;
+}
+
+.romenia {
+  margin-top: -35px;
+  grid-column: span 1;
+  grid-row: span 1;
+  height: 33%;
+}
+
+.romenia img {
+  height: 33%;
+}
+
+.tailand {
+  grid-column: span 2;
+  height: 80%;
+  object-fit: cover;
+}
+.tailand img {
+  height: 80%;
+}
+
+.suecia {
+  grid-column: span 2;
+  height: 110%;
+  object-fit: cover;
+}
 .what-is {
   height: 840px;
   margin-top: 100px;
