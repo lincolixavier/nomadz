@@ -200,23 +200,19 @@ body {
 }
 .community .text {
   text-align: left;
-  padding: 20px;
-  padding-left: 200px;
 }
-.community .discord {
-  transform: translateX(500px);
+.community .text .wrapper {
+  padding-left: 35px;
 }
+
 .community .text .weight-200 {
-  width: 89%;
+  width: 67%;
   font-size: 18px;
   font-family: Poppins;
   word-wrap: break-word;
   font-weight: 200;
 }
-.community .discord img {
-  max-width: none;
-  display: block;
-}
+
 .community .text h2 {
   color: #ffbb00;
   font-size: 33px;
@@ -482,13 +478,13 @@ body {
   font-family: Poppins;
   font-weight: 400;
 }
-@media (min-width: 1401px) and (max-width: 1777px) {
+/* @media (min-width: 1401px) and (max-width: 1777px) {
   .community .text {
     text-align: left;
     padding: 0px;
     padding-left: 0px;
   }
-}
+} */
 @media (max-width: 1400px) {
   .what-is {
     height: 615px;
@@ -572,21 +568,24 @@ body {
   }
 
   .community {
+    max-width: 1366px;
+    margin: 0 auto;
     display: flex;
-    width: 130%;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
-  .community .discord {
-    transform: translateX(85px);
-  }
   .community .text {
-    width: 100%;
+    flex: 1;
     text-align: left;
-    padding: 20px;
-    padding-left: 240px;
+    max-width: calc(50% - 10px);
+  }
+  .discord {
+    flex: 1;
+    text-align: center;
+    max-width: calc(50% - 10px);
   }
 }
 @media (max-width: 1366px) {
@@ -663,44 +662,6 @@ body {
   .how-to-do img {
     padding-top: 100px;
   }
-  .community {
-    display: flex;
-    width: 144%;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .community .discord {
-    transform: translateX(140px);
-  }
-}
-@media (min-width: 768px) and (max-width: 1124px) {
-  .community .text {
-    padding-left: 40px;
-    margin-left: 20px;
-  }
-
-  .community .text h2 {
-    font-size: 25px;
-  }
-
-  .community .text em {
-    font-size: 14px;
-  }
-
-  .community .text .weight-200,
-  .community .text p strong {
-    width: 40%;
-    font-size: 18px;
-  }
-  .community {
-    display: flex;
-    flex-direction: column;
-  }
-  .community .discord {
-    transform: translateX(20px);
-  }
 }
 
 @media (max-width: 767px) {
@@ -761,18 +722,16 @@ body {
   .community .text em {
     font-size: 14px;
   }
-
-  .community .text .weight-200,
-  .community .text p strong {
-    width: 40%;
-    font-size: 18px;
-  }
   .community {
-    display: flex;
     flex-direction: column;
+    padding: 0;
   }
-  .community .discord {
-    transform: translateX(20px);
+
+  .text,
+  .discord {
+    flex: 1;
+    text-align: center;
+    max-width: 100%;
   }
 
   .experiences {
@@ -835,6 +794,7 @@ body {
   }
 
   .benefits ul {
+    padding-left: 0px;
     column-count: 2;
     column-gap: 20px;
   }
@@ -890,7 +850,7 @@ body {
   }
 }
 
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
   .headline {
     width: 100%;
     flex-direction: column;
@@ -1087,4 +1047,4 @@ body {
     font-family: Poppins;
     font-weight: 600;
   }
-}
+} */
