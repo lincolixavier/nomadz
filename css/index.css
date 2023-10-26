@@ -254,9 +254,10 @@ body {
   font-weight: 600;
 }
 .places {
-  width: 80%;
+  width: 90%;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-gap: 8px;
 }
 .places img {
@@ -280,56 +281,54 @@ body {
   margin: 5px;
 }
 .brasil {
-  height: 95%;
-  grid-column: span 1;
-  grid-row: span 2;
+  grid-column: span 2;
+  grid-row: span 3;
 }
 
 .cingapura {
   grid-column: span 3;
-  grid-row: span 1;
+  grid-row: span 2;
 }
 
 .mexico {
-  grid-column: span 2;
-  grid-row: span 1;
+  grid-column: span 3;
+  grid-row: span 2;
 }
-
+.suecia {
+  grid-column: span 2;
+  grid-row: span 3;
+}
 .panama {
+  padding-top: 10px;
+  height: 80%;
   grid-column: span 4;
   grid-row: span 1;
 }
-
-.guatemala {
-  height: 115%;
-  grid-column: span 1;
+.panama img {
+  height: 80%;
 }
 
 .romenia {
-  margin-top: -35px;
+  padding-top: 10px;
+  width: 90%;
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.romenia img {
+  width: 90%;
+}
+/* .guatemala {
   grid-column: span 1;
   grid-row: span 1;
-  height: 33%;
-}
-
-.romenia img {
-  height: 33%;
 }
 
 .tailand {
-  grid-column: span 2;
-  height: 80%;
-  object-fit: cover;
-}
-.tailand img {
-  height: 80%;
-}
+  grid-column: span 1;
+  grid-row: span 1;
+} */
 
-.suecia {
-  grid-column: span 2;
-  height: 110%;
-  object-fit: cover;
-}
+
+
 .what-is {
   height: 840px;
   margin-top: 100px;
@@ -478,13 +477,7 @@ body {
   font-family: Poppins;
   font-weight: 400;
 }
-/* @media (min-width: 1401px) and (max-width: 1777px) {
-  .community .text {
-    text-align: left;
-    padding: 0px;
-    padding-left: 0px;
-  }
-} */
+
 @media (max-width: 1400px) {
   .what-is {
     height: 615px;
