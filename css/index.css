@@ -706,6 +706,8 @@ body {
     display: none;
   }
   .how-to-do {
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 0px;
     width: 100%;
     margin: 20px auto;
