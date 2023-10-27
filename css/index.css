@@ -166,7 +166,8 @@ body {
   bottom: 80px;
 }
 .how-to-do {
-  width: 1300px;
+  max-width: 1300px;
+  width: 90%;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -477,7 +478,8 @@ body {
   .headline {
     display: flex;
     text-align: left;
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
     padding: 60px 60px 60px 60px;
     justify-content: center;
   }
@@ -550,6 +552,7 @@ body {
 
   .community {
     max-width: 1366px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -573,7 +576,8 @@ body {
   .headline {
     display: flex;
     text-align: left;
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
     padding: 60px 60px 60px 60px;
     justify-content: center;
   }
@@ -614,10 +618,12 @@ body {
     bottom: -20px;
   }
   .community {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
   .experiences {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
   .experiences .text {
     text-align: center;
@@ -632,7 +638,8 @@ body {
     margin: 50px auto;
     align-items: center;
     text-align: center;
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
 
   .how-to-do h2 {
@@ -651,30 +658,208 @@ body {
     padding-top: 100px;
   }
   .what-is {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
   .benefits {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
   .who-am-i {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
 
   .subscribe-now {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
 }
 
 @media (max-width: 360px) {
+  .headline {
+    width: 100%;
+    flex-direction: column;
+  }
+  .headline .text {
+    width: 100%;
+  }
+  .headline .text h1 {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .headline .text h2 {
+    font-size: 22px;
+    padding-top: 40px;
+    width: 100%;
+
+  }
+  .headline .images {
+    width: 100%;
+  }
+  .headline .images .highlight-top-left,
+  .headline .images .highlight-bottom-left {
+    margin: 15px;
+  }
+  .mapheadline {
+    display: none;
+  }
+  .how-to-do {
+    padding-top: 0px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .how-to-do .wrapper {
+    width: 100%;
+  }
+  .how-to-do h2 {
+    font-size: 30px;
+  }
+  .how-to-do p {
+    font-size: 18px;
+  }
   .community {
     display: flex;
     flex-direction: column;
   }
   .community .text {
-    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 0px;
+    padding-left: 0px;
+    max-width: 100%;
   }
+  .community .text .wrapper {
+    padding-left: 0px;
+  }
+  .community .text h2 {
+    font-size: 22px;
+  }
+  .community .text em {
+    font-size: 12px;
+  }
+  .community .text .weight-200,
+  .community .text p strong {
+    font-size: 15px;
+  }
+  .community .discord {
+    max-width: 100%;
+  }
+  .experiences {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .experiences .text h1 {
+    font-size: 22px;
+    line-height: 45px;
+  }
+  .places {
+    width: 100%;
+  }
+  .what-is {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
+  }
+  .nomadz-button {
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .what-is .what-is-container {
+    width: 90%;
+  }
+  .what-is h2 {
+    margin: 2px;
+    font-size: 28px;
+  }
+  .what-is p {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .benefits {
+    padding-top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  .benefits h2 {
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37db5a;
+  }
+  .benefits ul {
+    column-count: 2;
+    column-gap: 20px;
+  }
+  .benefit {
+    width: calc(33.33% - 10px);
+    margin-right: 0px;
+    padding-left: 0px;
+    border-left: 3px solid #37db5a;
+    padding: 0px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  .benefit p {
+    font-size: 9px;
+    white-space: nowrap;
+  }
+
+
   .who-am-i {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .who-am-i .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-right: 0px;
+  }
+  .who-am-i .text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .who-am-i .text p {
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  .who-am-i .image {
+    display: none;
+  }
+ 
+
+
+
+
+  .subscribe-now {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
+  }
+  .subscribe-now h2 {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .subscribe-now .insurance {
+    width: 100%;
   }
 }
