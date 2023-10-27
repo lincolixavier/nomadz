@@ -782,7 +782,7 @@ body {
     margin: 10px;
   }
   .benefits {
-    padding-top: 20px;
+    padding-top: 30px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -791,6 +791,7 @@ body {
     height: 50vh;
   }
   .benefits h2 {
+    padding-left: 20px;
     font-size: 15px;
     font-family: Poppins;
     font-weight: 700;
