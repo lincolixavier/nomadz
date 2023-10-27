@@ -166,7 +166,8 @@ body {
   bottom: 80px;
 }
 .how-to-do {
-  width: 1300px;
+  max-width: 1300px;
+  width: 90%;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -359,6 +360,7 @@ body {
   height: 100vh;
 }
 .benefits h2 {
+  padding-bottom: 30px;
   font-size: 35px;
   font-family: Poppins;
   font-weight: 700;
@@ -385,6 +387,9 @@ body {
   padding: 10px;
   margin-bottom: 40px;
   text-align: justify;
+}
+.benefit p {
+  margin-left: 10px;
 }
 
 .who-am-i .text {
@@ -477,7 +482,8 @@ body {
   .headline {
     display: flex;
     text-align: left;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
     padding: 60px 60px 60px 60px;
     justify-content: center;
   }
@@ -550,6 +556,7 @@ body {
 
   .community {
     max-width: 1366px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -573,7 +580,8 @@ body {
   .headline {
     display: flex;
     text-align: left;
-    width: 1300px;
+    max-width: 1300px;
+    width: 100%;
     padding: 60px 60px 60px 60px;
     justify-content: center;
   }
@@ -605,19 +613,24 @@ body {
     flex-wrap: wrap;
   }
   .headline .images .highlight-top-left {
-    margin-left: 48px;
-    margin-bottom: 20px;
+    margin: 35px;
   }
-
+  .headline .images .highlight-bottom-left {
+    margin-top: 35px;
+    margin-right: 35px;
+  }
   .mapheadline {
     position: absolute;
-    bottom: -20px;
+    bottom: 80px;
   }
+
   .community {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
   .experiences {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
   .experiences .text {
     text-align: center;
@@ -632,7 +645,8 @@ body {
     margin: 50px auto;
     align-items: center;
     text-align: center;
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
 
   .how-to-do h2 {
@@ -651,30 +665,684 @@ body {
     padding-top: 100px;
   }
   .what-is {
-    width: 1300px;
+    width: 100%;
   }
   .benefits {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
+  }
+  .benefit p {
+    margin-left: 10px;
   }
   .who-am-i {
-    width: 1300px;
+    max-width: 1300px;
+    width: 90%;
   }
 
   .subscribe-now {
-    width: 1300px;
+    width: 100%;
   }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headline {
+    width: 100%;
+    flex-direction: column;
+  }
+  .headline .text {
+    width: 100%;
+  }
+  .headline .text h1 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .headline .text h2 {
+    padding-top: 40px;
+    width: 100%;
+  }
+  .headline .images {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 10px;
+  }
+  .headline .images .highlight-top-left {
+    margin: 0px;
+  }
+  .headline .images .highlight-bottom-left {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  .mapheadline {
+    display: none;
+  }
+  .how-to-do {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .how-to-do .wrapper {
+    width: 100%;
+  }
+
   .community {
     display: flex;
     flex-direction: column;
   }
   .community .text {
-    margin-bottom: 20px;
+    margin-left: 0px;
+    padding: 0px;
+    padding-left: 0px;
+    max-width: 100%;
   }
+  .community .text .wrapper {
+    padding-left: 0px;
+  }
+
+  .community .discord {
+    max-width: 100%;
+  }
+  .experiences {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .what-is {
+    height: 100%;
+    width: 100%;
+  }
+  .nomadz-button {
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .what-is .what-is-container {
+    width: 90%;
+  }
+  .what-is h2 {
+    margin: 2px;
+  }
+  .what-is p {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .benefits {
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  .benefits h2 {
+    padding-left: 20px;
+    font-size: 22px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37db5a;
+  }
+  .benefits ul {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  .benefit p {
+    margin-left: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
   .who-am-i {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .who-am-i .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-right: 0px;
+  }
+  .who-am-i .text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .who-am-i .text p {
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  .who-am-i .image {
+    display: none;
+  }
+
+  .subscribe-now {
+    height: 100%;
+    width: 100%;
+  }
+  .subscribe-now h2 {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .subscribe-now .insurance {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .headline {
+    width: 100%;
+    flex-direction: column;
+  }
+  .headline .text {
+    text-align: center;
+    width: 100%;
+  }
+  .headline .text h1 {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .headline .text h2 {
+    font-size: 22px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .headline .text .logo {
+    width: 70%;
+  }
+  .headline .images {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-gap: 10px;
+  }
+  .headline .images .highlight-top-left {
+    margin: 0px;
+  }
+  .headline .images .highlight-bottom-left {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  .mapheadline {
+    display: none;
+  }
+  .how-to-do {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .how-to-do .wrapper {
+    width: 100%;
+  }
+  .how-to-do h2 {
+    font-size: 30px;
+  }
+  .how-to-do p {
+    font-size: 18px;
+  }
+  .community {
+    display: flex;
+    flex-direction: column;
+  }
+  .community .text {
+    margin-left: 0px;
+    padding: 0px;
+    padding-left: 0px;
+    max-width: 100%;
+  }
+  .community .text .wrapper {
+    text-align: center;
+    padding-left: 0px;
+  }
+  .community .text h2 {
+    font-size: 22px;
+  }
+  .community .text em {
+    font-size: 12px;
+  }
+  .community .text .weight-200,
+  .community .text p strong {
+    width: 100%;
+    font-size: 15px;
+  }
+  .community .discord {
+    max-width: 100%;
+  }
+  .experiences {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .experiences .text h1 {
+    font-size: 22px;
+    line-height: 45px;
+  }
+  .places {
+    width: 100%;
+  }
+  .what-is {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
+  }
+  .nomadz-button {
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .what-is .what-is-container {
+    margin: 20px;
+    text-align: center;
+    width: 90%;
+  }
+  .what-is h2 {
+    margin: 2px;
+    font-size: 28px;
+  }
+  .what-is p {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .benefits {
+    width: 100%;
+    padding-top: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  .benefits h2 {
+    padding-left: 0px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37db5a;
+  }
+  .benefits ul {
+    width: 100%;
+    display: grid;
+    column-count: 1;
+    column-gap: 0px;
+  }
+  .benefit {
+    width: 90%;
+    margin-right: 0px;
+    padding-left: 0px;
+    border-left: 3px solid #37db5a;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .benefit i {
+    margin-left: 10px;
+  }
+  .benefit p {
+    margin-left: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .who-am-i {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .who-am-i .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-right: 0px;
+  }
+  .who-am-i .text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .who-am-i .text p {
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  .who-am-i .image {
+    display: none;
+  }
+
+  .subscribe-now {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
+  }
+  .subscribe-now h2 {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .subscribe-now .insurance {
+    width: 100%;
+  }
+
+  .places {
+    padding-left: 25px;
+    width: 100%;
+    display: block;
+  }
+  .places img {
+    max-width: 100%;
+    height: auto;
+    flex-grow: 1;
+  }
+  .places figure {
+    margin: 0;
+    break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .places figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .suecia {
+    padding-top: 10px;
+  }
+  .mexico {
+    padding-top: 10px;
+  }
+  .cingapura {
+    padding-top: 10px;
+  }
+
+  .panama {
+    height: 80%;
+  }
+  .panama img {
+    height: 80%;
+  }
+  .romenia {
+    padding-top: 10px;
+    width: 100%;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .romenia img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .headline {
+    width: 100%;
+    flex-direction: column;
+  }
+  .headline .text {
+    width: 100%;
+  }
+  .headline .text h1 {
+    width: 100%;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .headline .text h2 {
+    font-size: 22px;
+    padding-top: 40px;
+    width: 100%;
+  }
+  .headline .images {
+    width: 100%;
+  }
+  .headline .images .highlight-top-left,
+  .headline .images .highlight-bottom-left {
+    margin: 15px;
+  }
+  .mapheadline {
+    display: none;
+  }
+  .how-to-do {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .how-to-do .wrapper {
+    width: 100%;
+  }
+  .how-to-do h2 {
+    font-size: 30px;
+  }
+  .how-to-do p {
+    font-size: 18px;
+  }
+  .community {
+    display: flex;
+    flex-direction: column;
+  }
+  .community .text {
+    margin-left: 0px;
+    padding: 0px;
+    padding-left: 0px;
+    max-width: 100%;
+  }
+  .community .text .wrapper {
+    padding-left: 0px;
+  }
+  .community .text h2 {
+    font-size: 22px;
+  }
+  .community .text em {
+    font-size: 12px;
+  }
+  .community .text .weight-200,
+  .community .text p strong {
+    font-size: 15px;
+  }
+  .community .discord {
+    max-width: 100%;
+  }
+  .experiences {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .experiences .text h1 {
+    font-size: 22px;
+    line-height: 45px;
+  }
+  .places {
+    width: 100%;
+  }
+  .what-is {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
+  }
+  .nomadz-button {
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .what-is .what-is-container {
+    width: 90%;
+  }
+  .what-is h2 {
+    margin: 2px;
+    font-size: 28px;
+  }
+  .what-is p {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .benefits {
+    width: 100%;
+    padding-top: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  .benefits h2 {
+    padding-left: 0px;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #37db5a;
+  }
+  .benefits ul {
+    width: 100%;
+    display: grid;
+    column-count: 1;
+    column-gap: 0px;
+  }
+  .benefit {
+    width: 90%;
+    margin-right: 0px;
+    padding-left: 0px;
+    border-left: 3px solid #37db5a;
+    padding: 0px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .benefit i {
+    margin-left: 10px;
+  }
+  .benefit p {
+    margin-left: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  .who-am-i {
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .who-am-i .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-right: 0px;
+  }
+  .who-am-i .text h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .who-am-i .text p {
+    font-size: 13px;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  .who-am-i .image {
+    display: none;
+  }
+
+  .subscribe-now {
+    height: 100%;
+    width: 100%;
+    background-image: none;
+    background: linear-gradient(to right, #af137d, #7419e1);
+  }
+  .subscribe-now h2 {
+    width: 100%;
+    margin-top: 50px;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: 600;
+  }
+  .subscribe-now .insurance {
+    width: 100%;
+  }
+
+  .places {
+    padding-left: 25px;
+    width: 100%;
+    display: block;
+  }
+  .places img {
+    max-width: 100%;
+    height: auto;
+    flex-grow: 1;
+  }
+  .places figure {
+    margin: 0;
+    break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .places figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  .suecia {
+    padding-top: 10px;
+  }
+  .mexico {
+    padding-top: 10px;
+  }
+  .cingapura {
+    padding-top: 10px;
+  }
+
+  .panama {
+    height: 80%;
+  }
+  .panama img {
+    height: 80%;
+  }
+  .romenia {
+    padding-top: 10px;
+    width: 100%;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .romenia img {
+    width: 100%;
   }
 }
