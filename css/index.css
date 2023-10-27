@@ -366,7 +366,6 @@ body {
 }
 
 .benefits ul {
-  padding-left: 220px;
   column-count: 2;
   column-gap: 20px;
 }
@@ -375,7 +374,7 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .benefit {
