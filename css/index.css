@@ -360,6 +360,7 @@ body {
   height: 100vh;
 }
 .benefits h2 {
+  padding-bottom: 30px;
   font-size: 35px;
   font-family: Poppins;
   font-weight: 700;
