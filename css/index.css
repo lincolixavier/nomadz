@@ -782,7 +782,7 @@ body {
     margin: 10px;
   }
   .benefits {
-    padding-top: 0px;
+    padding-top: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
