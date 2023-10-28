@@ -852,11 +852,7 @@ body {
     width: 100%;
   }
 
-  .nomadz-button {
-    font-size: 15px;
-    width: 115%;
-    height: 50px;
-  }
+
 }
 
 @media (max-width: 767px) {
