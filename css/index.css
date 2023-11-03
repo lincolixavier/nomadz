@@ -164,6 +164,7 @@ body {
 .mapheadline {
   position: absolute;
   bottom: 80px;
+  z-index: -1;
 }
 .how-to-do {
   max-width: 1300px;
@@ -491,7 +492,7 @@ body {
     text-align: left;
     max-width: 1300px;
     width: 100%;
-    padding: 60px 60px 60px 60px;
+    padding: 60px 0px 60px 60px;
     justify-content: center;
   }
 
@@ -589,7 +590,7 @@ body {
     text-align: left;
     max-width: 1300px;
     width: 100%;
-    padding: 60px 60px 60px 60px;
+    padding: 60px 30px 60px 60px;
     justify-content: center;
   }
 
@@ -700,10 +701,12 @@ body {
     width: 100%;
   }
   .headline .text h1 {
+    font-size: 35px;
     width: 100%;
     margin-top: 20px;
   }
   .headline .text h2 {
+    font-size: 30px;
     padding-top: 40px;
     width: 100%;
   }
@@ -711,9 +714,10 @@ body {
     margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 100%;
     grid-gap: 10px;
+    width: 100%;
   }
+
   .headline .images .highlight-top-left {
     margin: 0px;
   }
@@ -747,7 +751,13 @@ body {
     max-width: 100%;
   }
   .community .text .wrapper {
+    text-align: center;
     padding-left: 0px;
+  }
+  .community .text .weight-200,
+  .community .text p strong {
+    width: 100%;
+    font-size: 15px;
   }
 
   .community .discord {
