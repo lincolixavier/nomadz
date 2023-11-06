@@ -164,6 +164,7 @@ body {
 .mapheadline {
   position: absolute;
   bottom: 80px;
+  z-index: -1;
 }
 .how-to-do {
   max-width: 1300px;
@@ -357,7 +358,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
 }
 .benefits h2 {
   padding-bottom: 30px;
@@ -371,12 +372,19 @@ body {
   column-count: 2;
   column-gap: 20px;
 }
+.benefit i {
+  margin-left: 10px;
+}
+.benefit p {
+  font-size: 19px;
+}
 
 .list {
+  width: 85%;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .benefit {
@@ -484,7 +492,7 @@ body {
     text-align: left;
     max-width: 1300px;
     width: 100%;
-    padding: 60px 60px 60px 60px;
+    padding: 60px 0px 60px 60px;
     justify-content: center;
   }
 
@@ -582,7 +590,7 @@ body {
     text-align: left;
     max-width: 1300px;
     width: 100%;
-    padding: 60px 60px 60px 60px;
+    padding: 60px 30px 60px 60px;
     justify-content: center;
   }
 
@@ -626,11 +634,11 @@ body {
 
   .community {
     max-width: 1300px;
-    width: 90%;
+    width: 100%;
   }
   .experiences {
     max-width: 1300px;
-    width: 90%;
+    width: 100%;
   }
   .experiences .text {
     text-align: center;
@@ -646,7 +654,7 @@ body {
     align-items: center;
     text-align: center;
     max-width: 1300px;
-    width: 90%;
+    width: 100%;
   }
 
   .how-to-do h2 {
@@ -669,14 +677,14 @@ body {
   }
   .benefits {
     max-width: 1300px;
-    width: 90%;
+    width: 100%;
   }
   .benefit p {
     margin-left: 10px;
   }
   .who-am-i {
     max-width: 1300px;
-    width: 90%;
+    width: 100%;
   }
 
   .subscribe-now {
@@ -686,33 +694,57 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .headline {
+    margin-bottom: 20px;
     width: 100%;
     flex-direction: column;
+    padding: 20px 30px 60px 60px;
   }
   .headline .text {
+    text-align: center;
     width: 100%;
   }
+  .headline .text img {
+    width: 185px;
+  }
   .headline .text h1 {
+    font-size: 30px;
     width: 100%;
     margin-top: 20px;
   }
-  .headline .text h2 {
-    padding-top: 40px;
+  .headline .text .travel {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .headline .text h2 {
+    font-size: 25px;
+    padding-top: 20px;
+    width: 75%;
   }
   .headline .images {
     margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     width: 100%;
-    grid-gap: 10px;
+    justify-items: center;
+  }
+
+  .headline .images .highlight-top-right {
+    justify-self: start;
   }
   .headline .images .highlight-top-left {
+    justify-self: end;
     margin: 0px;
   }
   .headline .images .highlight-bottom-left {
+    justify-self: end;
     margin-top: 0px;
     margin-right: 0px;
+  }
+  .headline .images .highlight-bottom-right {
+    justify-self: start;
+  
   }
 
   .mapheadline {
@@ -723,10 +755,21 @@ body {
     padding-right: 20px;
     padding-top: 0px;
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
+  }
+  .how-to-do h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .how-to-do p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 300;
+    word-wrap: break-word;
   }
   .how-to-do .wrapper {
-    width: 100%;
+    width: 75%;
   }
 
   .community {
@@ -739,8 +782,24 @@ body {
     padding-left: 0px;
     max-width: 100%;
   }
+  .community .text h2 {
+    font-size: 25px;
+  }
+  .community .text em {
+    font-weight: 300;
+    font-size: 14px;
+  }
   .community .text .wrapper {
+    text-align: center;
     padding-left: 0px;
+  }
+  .community .text .weight-200,
+  .community .text p strong {
+    width: 100%;
+    font-size: 15px;
+  }
+  .community .text .wrapper .questions {
+    margin-bottom: 20px;
   }
 
   .community .discord {
@@ -752,21 +811,34 @@ body {
     text-align: center;
     margin-top: 20px;
   }
+  .experiences .text h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
 
   .what-is {
     height: 100%;
     width: 100%;
   }
   .nomadz-button {
-    font-size: 20px;
+    padding: 16px;
+    font-size: 16px;
     height: 60px;
     width: 100%;
     margin-bottom: 5px;
   }
+  .nomadz-button img {
+    width: 80px;
+    margin-left: 5px;
+  }
   .what-is .what-is-container {
-    width: 90%;
+    margin: 25px;
+    text-align: center;
+    width: 69%;
   }
   .what-is h2 {
+    padding-top: 20px;
+    font-size: 25px;
     margin: 2px;
   }
   .what-is p {
@@ -774,6 +846,7 @@ body {
     margin: 10px;
   }
   .benefits {
+    margin-top: 30px;
     padding-top: 50px;
     text-align: center;
     display: flex;
@@ -784,7 +857,7 @@ body {
   }
   .benefits h2 {
     padding-left: 20px;
-    font-size: 22px;
+    font-size: 25px;
     font-family: Poppins;
     font-weight: 700;
     color: #37db5a;
@@ -810,12 +883,13 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
+    width: 60%;
     padding: 0;
     margin-right: 0px;
   }
   .who-am-i .text h2 {
-    font-size: 35px;
+    margin-top: 35px;
+    font-size: 25px;
     margin-bottom: 10px;
   }
   .who-am-i .text p {
@@ -832,14 +906,20 @@ body {
     width: 100%;
   }
   .subscribe-now h2 {
-    width: 100%;
+    width: 70%;
     margin-top: 50px;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Poppins;
     font-weight: 600;
   }
+  .subscribe-now .price {
+    font-size: 36px;
+  }
   .subscribe-now .insurance {
-    width: 100%;
+    width: 70%;
+  }
+  .logo-footer {
+    margin-bottom: 20px;
   }
 }
 
