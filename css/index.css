@@ -1,3 +1,8 @@
+:root{
+  --primary-color:#c052ff;
+  --gold: #ffbb00;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -116,11 +121,18 @@ body {
   height: 84px;
   width: 395px;
   border-radius: 12px;
+  border: none;
   color: #ffffff;
-  background-color: #6c1aef;
-  box-shadow: 7px 5px 0px 0px #505050;
+  background-color: var(--primary-color);
+  box-shadow: 7px 5px 0px 0px #32084b;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+.nomadz-button:hover{
+  background-color: #a725f2;
 }
 
+/* HEADER */
 .headline {
   display: flex;
   width: 1300px;
@@ -128,11 +140,11 @@ body {
 }
 
 .headline .text {
-  width: 55%;
+  width: 60%;
 }
 
 .headline .text h1 {
-  color: #a065ff;
+  color: var(--primary-color);
   font-size: 49px;
   font-family: Poppins;
   font-weight: 700;
@@ -153,11 +165,26 @@ body {
   width: 40%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: end;
 }
-.headline .images .highlight-top-left {
+.headline .images .highlight{
+  position: relative;
+  height: fit-content;
+}
+.headline .images .highlight:after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  background-color: var(--primary-color);
+  top: 3px;
+  left: 6px;
+  z-index: -1;
+}
+.headline .images .highlight.top-left {
   margin: 35px;
 }
-.headline .images .highlight-bottom-left {
+.headline .images .highlight.bottom-left {
   margin-top: 35px;
   margin-right: 35px;
 }
@@ -169,7 +196,7 @@ body {
 .how-to-do {
   max-width: 1300px;
   width: 90%;
-  padding-top: 100px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   margin: 50px auto;
@@ -181,32 +208,37 @@ body {
 }
 
 .how-to-do h2 {
-  color: #a065ff;
-  font-size: 49px;
-  font-family: Poppins;
-  font-weight: 700;
-}
-.how-to-do p {
-  font-size: 20px;
+  color: var(--primary-color);
+  font-size: 33px;
   font-family: Poppins;
   font-weight: 500;
+  margin-bottom: 21px;
+
+}
+.how-to-do p {
+  font-size: 22px;
+  font-family: Poppins;
+  font-weight: 100;
   word-wrap: break-word;
+  margin-bottom: 21px;
 }
 .how-to-do img {
   padding-top: 100px;
 }
 
+
+/* COMUNIDADE */
 .community {
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
+  max-width: 1300px;
+    margin: auto;
 }
 .community .text {
   text-align: left;
-}
-.community .text .wrapper {
-  padding-left: 35px;
+  width: 45%;
 }
 
 .community .text .weight-200 {
@@ -221,11 +253,13 @@ body {
   color: #ffbb00;
   font-size: 33px;
   font-family: Poppins;
+  font-weight: 500;
 }
 .community .text em {
   font-size: 17px;
   font-family: Poppins;
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 .community .text p strong {
@@ -233,9 +267,12 @@ body {
   font-family: Poppins;
   line-height: 33px;
   word-wrap: break-word;
-  font-weight: 700;
+  font-weight: 500;
 }
 
+.community .discord{
+  width: 55%;
+}
 .experiences {
   display: flex;
   flex-direction: column;
@@ -250,7 +287,7 @@ body {
   padding-bottom: 30px;
 }
 .experiences .text h1 {
-  font-size: 42px;
+  font-size: 33px;
   font-family: Poppins;
   line-height: 63px;
   word-wrap: break-word;
@@ -259,9 +296,9 @@ body {
 .places {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 8px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 12px;
 }
 .places img {
   max-width: 100%;
@@ -274,6 +311,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  padding-top: 0;
 }
 .places figcaption {
   position: absolute;
@@ -283,7 +321,7 @@ body {
   padding: 5px 10px;
   margin: 5px;
 }
-.brasil {
+.prague {
   grid-column: span 2;
   grid-row: span 3;
 }
@@ -303,12 +341,12 @@ body {
 }
 .panama {
   padding-top: 10px;
-  height: 80%;
+  height: 90%;
   grid-column: span 4;
   grid-row: span 1;
 }
 .panama img {
-  height: 80%;
+  height: 90%;
 }
 
 .romenia {
@@ -322,7 +360,7 @@ body {
 }
 
 .what-is {
-  height: 840px;
+  height: 690px;
   margin-top: 100px;
   background-image: url("../images/what-is.png");
   background-size: cover;
@@ -351,7 +389,13 @@ body {
   font-family: Poppins;
   font-weight: 400;
   word-wrap: break-word;
+  text-align: center;
+  margin-bottom: 15px;
 }
+.what-is p:nth-child(4){
+  margin-bottom: 40px;
+}
+
 .benefits {
   text-align: center;
   display: flex;
@@ -359,6 +403,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 80vh;
+  margin-top: 110px;
 }
 .benefits h2 {
   padding-bottom: 30px;
@@ -400,6 +445,9 @@ body {
   margin-left: 10px;
 }
 
+.who-am-i{
+  margin-top: 110px;
+}
 .who-am-i .text {
   display: flex;
   flex-direction: column;
@@ -424,7 +472,7 @@ body {
 }
 
 .who-am-i .text h2 {
-  color: #a065ff;
+  color: var(--primary-color);
   font-size: 49px;
   font-family: Poppins;
   font-weight: 700;
@@ -497,7 +545,7 @@ body {
   }
 
   .headline .text h1 {
-    color: #a065ff;
+    color: var(--primary-color);
     font-size: 49px;
     font-family: Poppins;
     font-weight: 700;
@@ -547,7 +595,7 @@ body {
   }
 
   .how-to-do h2 {
-    color: #a065ff;
+    color: var(--primary-color);
     font-size: 49px;
     font-family: Poppins;
     font-weight: 700;
@@ -595,7 +643,7 @@ body {
   }
 
   .headline .text h1 {
-    color: #a065ff;
+    color: var(--primary-color);
     font-size: 49px;
     font-family: Poppins;
     font-weight: 700;
@@ -658,7 +706,7 @@ body {
   }
 
   .how-to-do h2 {
-    color: #a065ff;
+    color: var(--primary-color);
     font-size: 49px;
     font-family: Poppins;
     font-weight: 700;
